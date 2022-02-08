@@ -2,26 +2,23 @@ import SplashScreen from "./Screens/SplashScreen";
 import Main from "./Screens/Main";
 import { NavigationContainer } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import MainTry from "./Screens/MainTry";
+import ShowInfo from "./Screens/ShowInfo";
 import MainScreen from "./Screens/MainScreen";
 
 const Stack = createNativeStackNavigator();
 
 export default function App() {
-	return (
-		<NavigationContainer>
-			<Stack.Navigator>
-				<Stack.Screen
-					name="SplashScreen"
-					component={SplashScreen}
-					options={{ headerShown: false }}
-				/>
-				<Stack.Screen
-					name="MainScreen"
-					component={MainScreen}
-					options={{ headerShown: false }}
-				/>
-			</Stack.Navigator>
-		</NavigationContainer>
-	);
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="SplashScreen"
+          component={SplashScreen}
+          options={{ headerShown: false }}
+        />
+        <Stack.Screen name="MainScreen" component={MainScreen} options={{ headerShown: false }} />
+        <Stack.Screen name="ShowInfo" component={ShowInfo} options={{ headerShown: false }} />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
 }
