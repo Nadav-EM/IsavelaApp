@@ -14,7 +14,7 @@ import * as Animatable from "react-native-animatable";
 const { width, height } = Dimensions.get("window");
 const letterAnimation = {
   0: { opacity: 0, translateX: -50 },
-  1: { opacity: 1, translateX: width / 2 - 50 },
+  1: { opacity: 1, translateX: width / 2 - width/ 4 },
 };
 
 const descAnimation = {

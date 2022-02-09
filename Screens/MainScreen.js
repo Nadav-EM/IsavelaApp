@@ -19,20 +19,20 @@ const images = {
     img: require("../IsavelaAssets/Cover4.jpg"),
     prods: [
       {
-        photo: require("../IsavelaAssets/Breast1B.png"),
-        desc: "ITEM 1",
-        price: "125.90$",
+        photo: require("../IsavelaAssets/man1W.png"),
+        desc: "Compression Vest",
+        price: "64.95$",
         assets: [
           {
-            imgColor: require("../IsavelaAssets/Breast1B.png"),
-            desc: "ITEM 1",
-            price: "125.90$",
+            imgColor: require("../IsavelaAssets/man1B.png"),
+            desc: "Compression Vest",
+            price: "64.95$",
             color: "Black",
           },
           {
-            imgColor: require("../IsavelaAssets/Breast1W.png"),
-            desc: "ITEM 1",
-            price: "125.90$",
+            imgColor: require("../IsavelaAssets/man1W.png"),
+            desc: "Compression Vest",
+            price: "64.95$",
             color: "White",
           },
         ],
@@ -58,7 +58,87 @@ const images = {
       },
     ],
   },
-  woman: { img: require("../IsavelaAssets/Cover3.png") },
+  woman: {
+    img: require("../IsavelaAssets/Cover3.png"),
+    prods: [
+      {
+        photo: require("../IsavelaAssets/Breast1W.png"),
+        desc: "support bra",
+        price: "30.95$",
+        assets: [
+          {
+            imgColor: require("../IsavelaAssets/Breast1W.png"),
+            desc: "support bra",
+            price: "30.95$",
+            color: "White",
+          },
+          {
+            imgColor: require("../IsavelaAssets/Breast1B.png"),
+            desc: "support bra",
+            price: "30.95$",
+            color: "Black",
+          },
+        ],
+      },
+      {
+        photo: require("../IsavelaAssets/sleeve1W.png"),
+        desc: "Sleeve",
+        price: "67.95$",
+        assets: [
+          {
+            imgColor: require("../IsavelaAssets/sleeve1W.png"),
+            desc: "Sleeve",
+            price: "67.95$",
+            color: "White",
+          },
+          {
+            imgColor: require("../IsavelaAssets/sleeve1B.png"),
+            desc: "Sleeve",
+            price: "67.95$",
+            color: "Black",
+          },
+        ],
+      },
+      {
+        photo: require("../IsavelaAssets/gr03W.png"),
+        desc: "high waist abdominal",
+        price: "79.95$",
+        assets: [
+          {
+            imgColor: require("../IsavelaAssets/gr03W.png"),
+            desc: "high waist abdominal",
+            price: "79.95$",
+            color: "White",
+          },
+          {
+            imgColor: require("../IsavelaAssets/gr03B.png"),
+            desc: "high waist abdominal",
+            price: "79.95$",
+            color: "Black",
+          },
+        ],
+      },
+      {
+        photo: require("../IsavelaAssets/stabilizerW.png"),
+        desc: "stabilizer band",
+        price: "56.95$",
+        assets: [
+          {
+            imgColor: require("../IsavelaAssets/stabilizerW.png"),
+            desc: "stabilizer band",
+            price: "56.95$",
+            color: "White",
+          },
+          {
+            imgColor: require("../IsavelaAssets/stabilizerB.png"),
+            desc: "stabilizer band",
+            price: "56.95$",
+            color: "Black",
+          },
+        ],
+      },
+    ],
+  },
   unisex: { img: require("../IsavelaAssets/Cover5.png") },
   facial: {
     img: require("../IsavelaAssets/Cover8.png"),
