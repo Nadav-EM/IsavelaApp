@@ -374,10 +374,12 @@ const MainScreen = ({ navigation }) => {
                           >
                             <Image
                               style={{
-                                height: 125,
-                                width: 125,
-                                borderRadius: 20,
+                                overflow: "hidden",
+                                height: 150,
+                                width: 150,
+                                borderRadius: 15,
                                 margin: 15,
+                                resizeMode: "center",
                               }}
                               source={item.photo}
                             />

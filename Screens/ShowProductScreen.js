@@ -12,19 +12,6 @@ import React from "react";
 import * as Animatable from "react-native-animatable";
 
 const { width, height } = Dimensions.get("window");
-const letterAnimation = {
-  0: { opacity: 0, translateX: -50 },
-  1: { opacity: 1, translateX: width / 2 - width/ 4 },
-};
-
-const descAnimation = {
-  0: { opacity: 0, translateX: -50, scale: 10 },
-  1: { opacity: 1, translateX: width / 2 - 35, scale: 1 },
-};
-
-const LOGO_WIDTH = 220;
-const LOGO_Height = 40;
-const DOT_SIZE = 40;
 
 const Ticker = ({ product, scrollX }) => {
   const { assets } = product.product;
@@ -51,6 +38,14 @@ const Ticker = ({ product, scrollX }) => {
 };
 
 const Item = ({ desc, imgColor, price, index, scrollX }) => {
+  const letterAnimation = {
+    0: { opacity: 0, translateX: -50 },
+    1: { opacity: 1, translateX: desc.length * 2 },
+  };
+  const descAnimation = {
+    0: { opacity: 0, translateX: -50, scale: 10 },
+    1: { opacity: 1, translateX: width / 2 - 35, scale: 1 },
+  };
   const inputRange = [(index - 1) * width, index * width, (index + 1) * width];
   const scale = scrollX.interpolate({
     inputRange,
@@ -212,7 +207,6 @@ const styles = StyleSheet.create({
     position: "absolute",
     top: 40,
     left: 20,
-
     overflow: "hidden",
     height: 40,
   },
@@ -220,7 +214,6 @@ const styles = StyleSheet.create({
     fontSize: 40,
     lineHeight: 40,
     textTransform: "uppercase",
-
     fontWeight: "bold",
   },
 });
