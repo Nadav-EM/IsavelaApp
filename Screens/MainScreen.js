@@ -15,46 +15,46 @@ import {
 const { width, height } = Dimensions.get("screen");
 
 const images = {
-  man: {
+  men: {
     img: require("../IsavelaAssets/Cover4.jpg"),
     prods: [
       {
         photo: require("../IsavelaAssets/Breast1B.png"),
         desc: "ITEM 1",
-        price: "123456$",
+        price: "125.90$",
         assets: [
-          { black: require("../IsavelaAssets/Breast1B.png") },
-          { white: require("../IsavelaAssets/Breast1W.png") },
+          {
+            imgColor: require("../IsavelaAssets/Breast1B.png"),
+            desc: "ITEM 1",
+            price: "125.90$",
+            color: "Black",
+          },
+          {
+            imgColor: require("../IsavelaAssets/Breast1W.png"),
+            desc: "ITEM 1",
+            price: "125.90$",
+            color: "White",
+          },
         ],
       },
       {
         photo: require("../IsavelaAssets/Breast1W.png"),
         desc: "ITEM 2",
-        price: "120$",
+        price: "19.90$$",
         assets: [
-          { black: require("../IsavelaAssets/Breast1B.png") },
-          { white: require("../IsavelaAssets/Breast1W.png") },
+          {
+            imgColor: require("../IsavelaAssets/Breast1B.png"),
+            desc: "ITEM 2",
+            price: "19.90$",
+            color: "Black",
+          },
+          {
+            imgColor: require("../IsavelaAssets/Breast1W.png"),
+            desc: "ITEM 2",
+            price: "19.90$",
+            color: "White",
+          },
         ],
-      },
-      {
-        photo: require("../IsavelaAssets/Breast1B.png"),
-        desc: "good",
-        price: "120$",
-      },
-      {
-        photo: require("../IsavelaAssets/Breast1W.png"),
-        desc: "good",
-        price: "19.90$",
-      },
-      {
-        photo: require("../IsavelaAssets/Breast1B.png"),
-        desc: "good",
-        price: "120$",
-      },
-      {
-        photo: require("../IsavelaAssets/Breast1W.png"),
-        desc: "good",
-        price: "19.90$",
       },
     ],
   },
@@ -287,7 +287,7 @@ const MainScreen = ({ navigation }) => {
                         <Animated.View>
                           <TouchableOpacity
                             onPress={() =>
-                              navigation.navigate("ShowInfo", {
+                              navigation.navigate("ShowProductScreen", {
                                 product: item,
                               })
                             }
